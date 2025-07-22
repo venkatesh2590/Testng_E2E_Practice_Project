@@ -26,14 +26,14 @@ public class OrmMyInfoTest extends BaseTest{
 		return new Object[][] {
 			{"venkat","nai","ven"},
 			{"venkatesh","naidu","ven"},
-			{"naidu","venk","ven"},
+			{"naidu","venk","venkatee"},
 			
 		};
 	}
 	
 	@Test(dataProvider = "getUserdata")
-	public void doEnterEmployedetailsTest(String firNm, String mdlNm, String lstNm) {
-		myInfoPage.doEnterEemployeDetails(firNm, mdlNm, mdlNm);
+	public void doEnterEmployedetailsTest(String firNme, String mdlNme, String lstNme) {
+		myInfoPage.doEnterEemployeDetails(firNme, mdlNme, lstNme);
 	}
 	
 }
